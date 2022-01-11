@@ -22,6 +22,9 @@
 		3A4743FE278D5D3400FACA9E /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4743FD278D5D3400FACA9E /* ColorView.swift */; };
 		3A474401278D617200FACA9E /* GXUtilz in Frameworks */ = {isa = PBXBuildFile; productRef = 3A474400278D617200FACA9E /* GXUtilz */; };
 		3A474403278D65E600FACA9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A474402278D65E600FACA9E /* MainViewController.swift */; };
+		3A474407278D813200FACA9E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A474406278D813200FACA9E /* CardView.swift */; };
+		3A47440A278D829300FACA9E /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A474409278D829300FACA9E /* TextView.swift */; };
+		3A47440C278D871900FACA9E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47440B278D871900FACA9E /* Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		3A4743E6278C17E900FACA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4743FD278D5D3400FACA9E /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		3A474402278D65E600FACA9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A474406278D813200FACA9E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3A474409278D829300FACA9E /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		3A47440B278D871900FACA9E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,16 +80,27 @@
 		3A4743D7278C17E700FACA9E /* TestEpoxyApp */ = {
 			isa = PBXGroup;
 			children = (
+				3A474408278D813900FACA9E /* Views */,
 				3A4743D8278C17E700FACA9E /* AppDelegate.swift */,
 				3A4743DA278C17E700FACA9E /* SceneDelegate.swift */,
 				3A4743DC278C17E700FACA9E /* ViewController.swift */,
 				3A4743E1278C17E900FACA9E /* Assets.xcassets */,
 				3A4743E3278C17E900FACA9E /* LaunchScreen.storyboard */,
 				3A4743E6278C17E900FACA9E /* Info.plist */,
-				3A4743FD278D5D3400FACA9E /* ColorView.swift */,
 				3A474402278D65E600FACA9E /* MainViewController.swift */,
 			);
 			path = TestEpoxyApp;
+			sourceTree = "<group>";
+		};
+		3A474408278D813900FACA9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A474406278D813200FACA9E /* CardView.swift */,
+				3A4743FD278D5D3400FACA9E /* ColorView.swift */,
+				3A474409278D829300FACA9E /* TextView.swift */,
+				3A47440B278D871900FACA9E /* Label.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,10 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A474407278D813200FACA9E /* CardView.swift in Sources */,
 				3A4743FE278D5D3400FACA9E /* ColorView.swift in Sources */,
 				3A4743DD278C17E700FACA9E /* ViewController.swift in Sources */,
+				3A47440A278D829300FACA9E /* TextView.swift in Sources */,
 				3A4743D9278C17E700FACA9E /* AppDelegate.swift in Sources */,
 				3A4743DB278C17E700FACA9E /* SceneDelegate.swift in Sources */,
+				3A47440C278D871900FACA9E /* Label.swift in Sources */,
 				3A474403278D65E600FACA9E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

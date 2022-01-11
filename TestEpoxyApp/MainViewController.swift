@@ -22,28 +22,11 @@ class MainViewController: CollectionViewController {
         collectionView.alwaysBounceVertical = true
     }
     
-    private enum DataID {
         enum Section {
-            case first
-            case second
-            case third
+            case colors
+            case cards
+            case quotes
         }
-        
-        enum First {
-            case one
-            case two
-        }
-        
-        enum Second {
-            case one
-        }
-        
-        enum Third {
-            case one
-            case two
-            case three
-        }
-    }
     
     @SectionModelBuilder private var sections: [SectionModel] {
         firstSection
@@ -51,23 +34,30 @@ class MainViewController: CollectionViewController {
     }
     
     private var firstSection: SectionModel {
-        SectionModel(dataID: DataID.Section.first) {
-            ColorView.itemModel(dataID: DataID.First.one, style: .init())
+        SectionModel(dataID: Section.colors) {
+            ColorView.itemModel(dataID: "DataID.First.one", style: .init())
                             .flowLayoutItemSize(.init(width: .displayWidth(50), height: .displayWidth(50)))
-            ColorView.itemModel(dataID: DataID.First.two, style: .init(color: .yellow, cornerRadius: 20))
+            ColorView.itemModel(dataID: "DataID.First.two", style: .init(color: .yellow, cornerRadius: 20))
                             .flowLayoutItemSize(.init(width: .displayWidth(50), height: .displayWidth(25)))
         }
-        .flowLayoutMinimumInteritemSpacing(0)
         .flowLayoutSectionInset(UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0))
+        .flowLayoutMinimumInteritemSpacing(0)
     }
     
     private var secondSection: SectionModel {
-        SectionModel(dataID: DataID.Section.second, items: [
-            ColorView.itemModel(dataID: 1, style: .init(color: .yellow)),
-            ColorView.itemModel(dataID: 2, style: .init(color: .black)),
-            ColorView.itemModel(dataID: 3, style: .init(color: .green))
-        ])
+        SectionModel(dataID: Section.quotes) {
+            quotes.map { item in
+                TextView.itemModel(dataID: item.quote,
+                                   content: .init(quote: item.quote, author: item.author))
+            }
+        }
     }
+    
+    private var quotes: [Statement] = [
+        Statement(quote: "Падает тот, кто бежит. Тот, кто ползет, не падает.", author: "Плиний Старший"),
+        Statement(quote: "Человек должен мечтать, чтобы видеть смысл жизни.", author: "Вольтер"),
+        Statement(quote: "Влюбиться? Влюбляться не значит любить. Влюбиться можно и ненавидя.", author: "Достоевский")
+    ]
 }
 
 struct Card {
@@ -76,3 +66,7 @@ struct Card {
     var id: UUID = UUID()
 }
 
+struct Statement {
+    var quote: String
+    var author: String
+}
