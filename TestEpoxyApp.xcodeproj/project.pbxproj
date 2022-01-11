@@ -10,7 +10,6 @@
 		3A4743D9278C17E700FACA9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4743D8278C17E700FACA9E /* AppDelegate.swift */; };
 		3A4743DB278C17E700FACA9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4743DA278C17E700FACA9E /* SceneDelegate.swift */; };
 		3A4743DD278C17E700FACA9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4743DC278C17E700FACA9E /* ViewController.swift */; };
-		3A4743E0278C17E700FACA9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4743DE278C17E700FACA9E /* Main.storyboard */; };
 		3A4743E2278C17E900FACA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4743E1278C17E900FACA9E /* Assets.xcassets */; };
 		3A4743E5278C17E900FACA9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4743E3278C17E900FACA9E /* LaunchScreen.storyboard */; };
 		3A4743EE278C1CDC00FACA9E /* Epoxy in Frameworks */ = {isa = PBXBuildFile; productRef = 3A4743ED278C1CDC00FACA9E /* Epoxy */; };
@@ -20,6 +19,9 @@
 		3A4743F6278C1CDC00FACA9E /* EpoxyLayoutGroups in Frameworks */ = {isa = PBXBuildFile; productRef = 3A4743F5278C1CDC00FACA9E /* EpoxyLayoutGroups */; };
 		3A4743F8278C1CDC00FACA9E /* EpoxyNavigationController in Frameworks */ = {isa = PBXBuildFile; productRef = 3A4743F7278C1CDC00FACA9E /* EpoxyNavigationController */; };
 		3A4743FA278C1CDC00FACA9E /* EpoxyPresentations in Frameworks */ = {isa = PBXBuildFile; productRef = 3A4743F9278C1CDC00FACA9E /* EpoxyPresentations */; };
+		3A4743FE278D5D3400FACA9E /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4743FD278D5D3400FACA9E /* ColorView.swift */; };
+		3A474401278D617200FACA9E /* GXUtilz in Frameworks */ = {isa = PBXBuildFile; productRef = 3A474400278D617200FACA9E /* GXUtilz */; };
+		3A474403278D65E600FACA9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A474402278D65E600FACA9E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +29,11 @@
 		3A4743D8278C17E700FACA9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A4743DA278C17E700FACA9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A4743DC278C17E700FACA9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A4743DF278C17E700FACA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A4743E1278C17E900FACA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A4743E4278C17E900FACA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A4743E6278C17E900FACA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A4743FD278D5D3400FACA9E /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		3A474402278D65E600FACA9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 				3A4743F4278C1CDC00FACA9E /* EpoxyCore in Frameworks */,
 				3A4743F8278C1CDC00FACA9E /* EpoxyNavigationController in Frameworks */,
 				3A4743FA278C1CDC00FACA9E /* EpoxyPresentations in Frameworks */,
+				3A474401278D617200FACA9E /* GXUtilz in Frameworks */,
 				3A4743F6278C1CDC00FACA9E /* EpoxyLayoutGroups in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,10 +77,11 @@
 				3A4743D8278C17E700FACA9E /* AppDelegate.swift */,
 				3A4743DA278C17E700FACA9E /* SceneDelegate.swift */,
 				3A4743DC278C17E700FACA9E /* ViewController.swift */,
-				3A4743DE278C17E700FACA9E /* Main.storyboard */,
 				3A4743E1278C17E900FACA9E /* Assets.xcassets */,
 				3A4743E3278C17E900FACA9E /* LaunchScreen.storyboard */,
 				3A4743E6278C17E900FACA9E /* Info.plist */,
+				3A4743FD278D5D3400FACA9E /* ColorView.swift */,
+				3A474402278D65E600FACA9E /* MainViewController.swift */,
 			);
 			path = TestEpoxyApp;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				3A4743F5278C1CDC00FACA9E /* EpoxyLayoutGroups */,
 				3A4743F7278C1CDC00FACA9E /* EpoxyNavigationController */,
 				3A4743F9278C1CDC00FACA9E /* EpoxyPresentations */,
+				3A474400278D617200FACA9E /* GXUtilz */,
 			);
 			productName = TestEpoxyApp;
 			productReference = 3A4743D5278C17E700FACA9E /* TestEpoxyApp.app */;
@@ -136,6 +142,7 @@
 			mainGroup = 3A4743CC278C17E700FACA9E;
 			packageReferences = (
 				3A4743EC278C1CDC00FACA9E /* XCRemoteSwiftPackageReference "epoxy-ios" */,
+				3A4743FF278D617200FACA9E /* XCRemoteSwiftPackageReference "garpix_utils" */,
 			);
 			productRefGroup = 3A4743D6278C17E700FACA9E /* Products */;
 			projectDirPath = "";
@@ -153,7 +160,6 @@
 			files = (
 				3A4743E5278C17E900FACA9E /* LaunchScreen.storyboard in Resources */,
 				3A4743E2278C17E900FACA9E /* Assets.xcassets in Resources */,
-				3A4743E0278C17E700FACA9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,23 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4743FE278D5D3400FACA9E /* ColorView.swift in Sources */,
 				3A4743DD278C17E700FACA9E /* ViewController.swift in Sources */,
 				3A4743D9278C17E700FACA9E /* AppDelegate.swift in Sources */,
 				3A4743DB278C17E700FACA9E /* SceneDelegate.swift in Sources */,
+				3A474403278D65E600FACA9E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A4743DE278C17E700FACA9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A4743DF278C17E700FACA9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A4743E3278C17E900FACA9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,7 +320,6 @@
 				INFOPLIST_FILE = TestEpoxyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,7 +347,6 @@
 				INFOPLIST_FILE = TestEpoxyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -396,6 +394,14 @@
 				minimumVersion = 0.7.0;
 			};
 		};
+		3A4743FF278D617200FACA9E /* XCRemoteSwiftPackageReference "garpix_utils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GARPIX-iOS/garpix_utils";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -433,6 +439,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A4743EC278C1CDC00FACA9E /* XCRemoteSwiftPackageReference "epoxy-ios" */;
 			productName = EpoxyPresentations;
+		};
+		3A474400278D617200FACA9E /* GXUtilz */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A4743FF278D617200FACA9E /* XCRemoteSwiftPackageReference "garpix_utils" */;
+			productName = GXUtilz;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
